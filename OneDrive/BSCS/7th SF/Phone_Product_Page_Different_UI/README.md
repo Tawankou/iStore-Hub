@@ -1,6 +1,6 @@
-# iPhone Product Page (iStore Hub)
+## iStore Hub
 
-A responsive web application featuring an interactive product page with dynamic form handling, real-time age-based discount calculation, and sleek UI styling.
+A sleek, modern e-commerce and product showcase web application dedicated to Apple's latest lineup, featuring an interactive booking form with real-time age-based discount calculation, dynamic price tracking, and a fully responsive UI.
 
 ## How to Run the Project
 
