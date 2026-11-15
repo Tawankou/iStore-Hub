@@ -5,7 +5,7 @@ A responsive web application featuring an interactive product page with dynamic 
 ## How to Run the Project
 
 You can view the live project directly here: 
-https://github.com/Tawankou/iStore-Hub.git
+ https://tawankou.github.io/iStore-Hub/
 
 
 Alternatively, to run it locally:
