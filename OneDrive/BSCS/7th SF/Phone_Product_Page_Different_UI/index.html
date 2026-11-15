@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>iStore Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <!-- Task 3: theme button at the top -->
+    <button id="themeBtn">Toggle Light/Dark Mode</button>
+
+    <h1 id="title">iStore Hub</h1>
+
+    <!-- Task 8: status banner under the h1 -->
+    <p id="status"></p>
+
+    <nav>
+        <a href="#phones">Phones</a>
+        <a href="#prices">Prices</a>
+        <a href="#order">Order</a>
+    </nav>
+</header>
+
+<main>
+
+<p id="welcome"></p>
+
+<section id="phones">
+    <h2>Models</h2>
+
+    <div id="phoneList">
+        <div class="phone">
+            <h3>iPhone Duo</h3>
+            <p>Apple's first book-style foldable combining a 5.4-inch outer screen with a 7.6-inch tablet display.</p>
+        </div>
+
+        <div class="phone">
+            <h3>iPhone 18 Pro</h3>
+            <p>6.3-inch display featuring the A20 Pro chip, a new variable-aperture camera system, and class-leading battery life.</p>
+        </div>
+
+        <div class="phone">
+            <h3>iPhone 18 Pro Max</h3>
+            <p>6.9-inch display featuring the A20 Pro chip, a new variable-aperture camera system, and class-leading battery life.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Task 6: Read More article -->
+<section>
+    <h2>About Us</h2>
+    <article>
+        <p>iStore Hub started as a small shop helping customers find the right Apple phone at a fair price.</p>
+        <p id="extra" style="display:none;">Today we offer pre-booking for new releases, honest advice from our team, and after-sales support for every phone we sell.</p>
+        <button id="readBtn">Read More</button>
+    </article>
+</section>
+
+<section>
+    <img src="image.png" alt="Different smartphones" width="500">
+</section>
+
+<section id="prices">
+    <h2>Price List</h2>
+
+    <!-- Task 7: filter buttons -->
+    <div class="filters">
+        <button data-filter="all">All</button>
+        <button data-filter="foldable">Foldable</button>
+        <button data-filter="pro">Pro</button>
+    </div>
+    <br>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Select</th>
+                <th>Model</th>
+                <th>Storage</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr data-category="foldable">
+                <td><input type="checkbox" class="item" data-price="555000"></td>
+                <td>iPhone Duo</td>
+                <td>256 GB</td>
+                <td>Rs. 555,000</td>
+            </tr>
+            <tr data-category="pro">
+                <td><input type="checkbox" class="item" data-price="350000"></td>
+                <td>iPhone 18 Pro</td>
+                <td>256 GB</td>
+                <td>Rs. 350,000</td>
+            </tr>
+            <tr data-category="pro">
+                <td><input type="checkbox" class="item" data-price="650000"></td>
+                <td>iPhone 18 Pro Max</td>
+                <td>1 TB</td>
+                <td>Rs. 650,000</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Task 4: total -->
+    <p id="total">Total: Rs. 0</p>
+</section>
+
+<section>
+    <h2>Most Popular Model</h2>
+
+    <ol type="A">
+        <li>iPhone Duo</li>
+        <li>iPhone 18 Pro Max</li>
+    </ol>
+</section>
+
+<section id="order">
+    <h2>Pre-book Now!</h2>
+
+    <div id="orderForm">
+        <form id="bookingForm">
+
+            <label>Your Name:</label><br>
+            <input type="text" id="name"><br><br>
+
+            <label>Email:</label><br>
+            <input type="email" id="email"><br><br>
+
+            <!-- Task 5: birth year -->
+            <label>Birth Year:</label><br>
+            <input type="text" id="birth-year"><br><br>
+
+            <label>Which phone are you interested in?</label><br>
+
+            <input type="radio" name="phone"> iPhone Duo
+            <input type="radio" name="phone"> iPhone 18 Pro
+            <input type="radio" name="phone"> iPhone 18 Pro Max
+
+            <br><br>
+
+            <label>Your Address:</label><br>
+            <textarea id="address" rows="4"></textarea><br><br>
+
+            <!-- Task 9: special notes + counter -->
+            <label>Special Requests:</label><br>
+            <textarea id="special-notes" maxlength="100" rows="3"></textarea>
+            <p id="counter">100 characters remaining</p>
+
+            <input type="checkbox"> Send me updates.
+
+            <br><br>
+
+            <input type="submit" value="Send">
+
+        </form>
+    </div>
+
+    <!-- Task 1 + 5: messages appear here -->
+    <p id="message"></p>
+    <p id="discount"></p>
+</section>
+
+<p>
+    Learn more about Apple phones:
+    <a href="https://www.apple.com/iphone/">Visit Apple Website</a>
+</p>
+
+</main>
+
+<footer>
+    <p>iStore Hub | 2026</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
